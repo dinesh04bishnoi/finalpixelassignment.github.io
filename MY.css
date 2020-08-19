@@ -1,0 +1,35 @@
+:root {
+    --secondary-color: #45969b;
+    --primary-color: #f45905;
+}
+
+.card {
+    margin-top: 7%;
+    box-shadow:2px 6px 9px #888888;
+}
+
+.card-header {
+    background-color:var(--secondary-color);
+    color:white;
+    text-align: center;
+}
+.btn{
+    background-color: var(--primary-color);
+    color: white;
+    box-shadow: 2px 6px 9px #888888;
+}
+.center{
+    margin-left:30%;
+    
+   
+}
+
+.list-group-item:hover{
+    background-color: skyblue;
+    color: snow;
+}
+
+#alert-danger{
+    display: none;
+}
+

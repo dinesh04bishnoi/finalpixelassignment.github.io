@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/f75105201e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="MY.css">
+    <link rel="stylesheet" type="text/css" href="page1.css">
+    <script src="form.js"></script>
+    <title>Page 1</title>
+</head>
+
+<body>
+   
+    <form>
+        <div class="container">
+            <div class="card">
+                
+                <div class="card-header">Candidate Information  </div>
+                <div class="card-body">
+                        <div class="name">
+                        <label for="name">User Name <span class="form-required">*</span></label>
+                        <input type="text" id="name" placeholder="Enter your name" class="form-control">
+                        <span id="message" class="text text-danger"></span>
+                    </div>
+                    <div class="gender">
+                        <label for="gender">Gender</label><br>
+                        <input type="radio" id="male" name="gender" value="male" checked>
+                        <label for="male" class="male">Male</label>
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label for="female" class="female">Female</label>
+                        <input type="radio" id="other" name="gender" value="other">
+                        <label for="other" class="other">Other</label>
+                    </div>
+
+                    <div class="address">
+                        <label for="address">Address</label>
+                        <textarea id="address" rows="4" cols="50" maxlength="150" class="form-control" placeholder="Maximum 150 Character you can enter here..."></textarea>
+                    </div>
+                    <div class="email">
+                        <label for="email">Email <span class="form-required">*</span></label>
+                        <input type="text" name="email" id="email" class="form-control" placeholder="Enter your email id">
+                        <span id="mail" class="text text-danger"></span>
+                    </div>
+                    <div class="phone">
+                        <label for="phone">Phone No. <span class="form-required">*</span></label>
+                        <input type="text" id="phone" value="" class="form-control" placeholder="Enter your phone no.">
+                        <span id="mobileNumber" class="text text-danger"></span>
+                    </div>
+                    <div class="education">
+                        <label for="education">Education</label>
+                        <table class="table table-bordered" id="table">
+
+                            <tr id="heading">
+                                <th>Level</th>
+                                <th>Year</th>
+                                <th>Grade</th>
+                                <th>Action</th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="form-group">
+
+                                        <select class="form-control" id="level">
+                                            <option value="">-- Select Level --</option>
+                                            <option value="SSC">SSC</option>
+                                            <option value="HSSC">HSSC</option>
+                                            <option value="Diploma">Diploma</option>
+                                            <option value="BE">BE</option>
+                                            <option value="Btch">Btech</option>
+                                            <option value="BCA">BCA</option>
+                                            <option value="MCA">MCA</option>
+                                        </select>
+                                    </div>
+
+                                </td>
+                                <td>
+                                    <div class="form-group">
+                                        <input type="number" class="form-control" id="year">
+                                        <span id="error" class="text text-danger "></span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" id="grade">
+                                    </div>
+                                </td>
+                                <td><button type="button" class="btn btn-primary" onclick="addEducation()">Add</button>
+                                </td>
+                            </tr>
+                            </table>
+                    </div>
+                    <span id="edu-error" class="text text-danger"></span>
+
+                    <div class="skills">
+                        <label for="skills">Skills</label>
+                        <table class="table table-bordered" id="table2">
+
+                            <tr id="heading">
+                                <th>Name</th>
+                                <th>Rating</th>
+                                <th>Action</th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" id="skillName">
+                                        <span id="error" class="text text-danger "></span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="form-group">
+
+                                        <select class="form-control" id="rating">
+                                            <option value="">-- Select Rating --</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>
+                                            <option value="7">7</option>
+                                            <option value="8">8</option>
+                                            <option value="9">9</option>
+                                            <option value="10">10</option>
+                                        </select>
+                                    </div>
+
+                                </td>
+
+
+                                <td><button type="button" class="btn btn-primary" onclick="addSkills()">Add</button>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <span id="skill-error" class="text text-danger"></span>
+                    <div class="hobbies">
+                        <label for="hobbies">Hobbies <span class="form-required">*</span></label>
+                        <input type="text" id="hobbies" class="form-control" placeholder="Enter your hobbies">
+                        <span id="hobby" class="text text-danger"></span>
+                    </div>
+
+                    <div class="photo"></div>
+                    <label for="photo">Photo <span class="form-required">*</span></label>
+                    <input type="text" placeholder="Link to your online photo" id="photo" class="form-control">
+                    <span id="photo-error" class="text text-danger"></span>
+
+                    <div class="alert alert-danger" role="alert" id="alert-danger">
+                        There are some error in the form please correct them before submit !!
+                      </div>
+                    <div class="submit">
+                        <button type="button" id="submit" onclick="SubmitForm();"
+                            class="btn btn-success">Submit</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </form>
+
+</body>
+
+</html>

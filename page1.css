@@ -1,0 +1,118 @@
+#name{
+    width: 50%;
+    margin-left: 6%;
+    margin-bottom: 1%;
+}
+
+label{
+    width: 10%;
+    margin-left: 5%;
+    
+}
+#male{
+    width: 2%;
+    margin-left: 8%;
+}
+#female{
+    width: 3%;
+    margin-left: -2%;
+}
+#other{
+    width: 8%;
+    margin-left: -2%;
+}
+.male{
+    margin-left: 1%;
+}
+.female{
+    margin-left: 1%;
+}
+.other{
+    margin-left: -2%;
+}
+
+
+
+#table{
+    width: 47%;
+    margin-left: 10%;
+}
+#table2{
+    width: 47%;
+    margin-left: 10%;
+}
+#btn{
+    width: 12%;
+    margin-left: .5%;
+}
+#submit{
+    margin-left: 40.56%;
+    width: 35%;
+    margin-top: 2%;
+}
+#error{
+font-size: x-small;    
+}
+span{
+    margin-left:7%;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+#address{
+    width: 50%;
+    margin-left: 6%;
+    margin-bottom: 1%;
+}
+#email{
+    width: 50%;
+    margin-left: 6%;
+    margin-bottom: 1%;
+}
+#phone{
+    width: 50%;
+    margin-left: 6%;
+    margin-bottom: 1%;
+}
+#skills{
+    width: 50%;
+    margin-left: 6%;
+    margin-bottom: 1%;
+}
+#hobbies{
+    width: 50%;
+    margin-left: 6%;
+    margin-bottom: 1%;
+}
+#photo{
+    width: 50%;
+    margin-left: 6%;
+    margin-bottom: 1%;
+}
+#message{
+    font-size: x-small;
+}
+#mail{
+    font-size: x-small;
+}
+#mobileNumber{
+    font-size: x-small;
+}
+#hobby{
+    font-size: x-small;
+}
+#photo-error{
+    font-size: x-small;
+}
+.form-required{
+    color: red;
+}
